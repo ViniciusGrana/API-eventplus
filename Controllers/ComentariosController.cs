@@ -80,12 +80,12 @@ namespace webapi.event_.Controllers
             }
         }
 
-        [HttpGet("ListarTodos/{id}")]
-        public IActionResult Get(Guid id)
+        [HttpGet("ListarTodos")]
+        public IActionResult Get()
         {
             try
             {
-                return Ok(_comentariosEventoRepository.Listar(id));
+                return Ok(_comentariosEventoRepository.Listar);
             }
             catch (Exception e)
             {

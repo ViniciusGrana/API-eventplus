@@ -137,4 +137,4 @@ namespace webapi.event_.Repositories
                 }).Where(p => p.IdUsuario == id).ToList();
         }
     }
-}s
+}
